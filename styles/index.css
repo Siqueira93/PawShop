@@ -1,3 +1,19 @@
 header nav{
     background-color: #6EB3D0;
 }
+
+#titleform {
+    color: #F7B6D2;
+}
+
+.bg-bluePersonal {
+    background-color:#6EB3D0;
+    text-align: center;
+    color: black;
+}
+
+form .bg-bluePersonal:hover {
+    background-color: #3493bc;
+    color: white;
+    
+}

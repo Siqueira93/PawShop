@@ -12,7 +12,7 @@
 <body data-bs-theme="light">
     <header>
         <!-- NAVBAR -->
-        <nav class="navbar navbar-expand-lg">
+        <nav class="navbar navbar-expand-lg fixed-top">
             <div class="container-fluid">
               <a class="navbar-brand" href="#">
                   <img src="images/logoWhite.svg" alt="logo">
@@ -164,18 +164,43 @@
             </div>
         </section>
 
-        <section id="informacaoPessoaisUsario">
-            <div class="container text-center text-info container-fluid d-flex flex-column align-items-center">
-                <h2>ADOTE UM PET</h2>
-
-
+        <section id="formulario">
+            <h2 id="titleform" class="d-flex justify-content-center text-align-center m-5 fw-bold">ADOTE UM PET</h2>
+            <!-- trabalhou com linha acrenscente baseada em 12 divisões -->
+            <div class="p-0 container-fluid row">
+                <h2 class="text-info d-flex justify-content-center text-align-center">Insira aqui as suas informações para que possamos encontrar um amigo para você!</h2>
+                <aside class="col-6 d-flex justify-content-center align-items-center">
+                    <form class="w-75">
+                        <div class="mb-3">
+                          <label for="Email" class="form-label fw-bold mt-3 pl-5">E-mail</label>
+                          <input type="email" placeholder="Insira seu E-mail" class="form-control" id="Email" aria-describedby="emailHelp">
+                          <div id="emailHelp" class="form-text">Nunca compartilhamos suas informações</div>
+                        </div>
+                        <div class="mb-3">
+                          <label for="telefone" class="form-label fw-bold">Telefone</label>
+                          <input type="tel" placeholder="Insira seu telefone" class="form-control" id="telefone">
+                        </div>
+                        <div class="mb-3 form-check">
+                          <input type="checkbox" class="form-check-input" id="notificacao">
+                          <label class="form-check-label" for="notificacao">Aceita receber notificações</label>
+                        </div>
+                        <button type="submit" class="btn bg-bluePersonal fw-bold">Enviar</button>
+                      </form>
+                </aside>
+                <aside class="col-6">
+                    <img class="w-100" src="images/imgBanner.png" alt="humanoeseudog">
+                </aside>
             </div>
+            
+            
         </section>
 
     </main>
 
 
-    <footer>
+    <footer class="container-fluid bg-bluePersonal py-3">
+        <p> &copy; Todos os direitos reservados a @PawShop 2024</p>
+       
 
     </footer>
     
@@ -210,7 +235,7 @@
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
-                    <img src="images/productImage2.png" alt="">
+                    <img class="w-100" src="images/productImage2.png" alt="">
                     <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Deleniti necessitatibus quae laborum? Illum, temporibus exercitationem ducimus id fugiat ab optio impedit labore beatae dolorem, quaerat, sequi officiis possimus vel eveniet!</p>
                 </div>
                 <div class="modal-footer">
@@ -228,7 +253,7 @@
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
-                    <img src="images/productImage3.png" alt="">
+                    <img class="w-100" src="images/productImage3.png" alt="">
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptates dolorem hic deleniti velit obcaecati aliquid dignissimos quae alias mollitia nostrum ipsa doloremque, modi neque, error consequuntur aperiam quidem praesentium ad.</p>
                 </div>
                 <div class="modal-footer">
@@ -246,7 +271,7 @@
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
-                    <img src="images/productImage4.png" alt="">
+                    <img class="w-100" src="images/productImage4.png" alt="">
                     <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Expedita, saepe, ut pariatur quod at obcaecati soluta inventore, quidem debitis magnam tempora ab mollitia sit quas sequi ea excepturi quis tenetur?</p>
                 </div>
                 <div class="modal-footer">
